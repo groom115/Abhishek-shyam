@@ -47,7 +47,7 @@ const TitleTypewriterEffect = () => {
           typewriter
             .changeDelay(35)
             .pauseFor(500)
-            .typeString('my name is Tasos and I am a Full stack engineer.')
+            .typeString('my name is Tasos and I am a software engineer.')
             .callFunction(showNext(3))
             .start();
         }}
