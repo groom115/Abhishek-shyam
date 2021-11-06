@@ -1,3 +1,1 @@
-Tasos Boulis personal website
-
-[link](tasosboulis.com)
+Tasos Boulis personal [website](https://www.tasosboulis.com)
