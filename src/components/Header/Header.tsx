@@ -1,5 +1,6 @@
 import Avatar from '../Avatar/Avatar'
 import PersonalDetails from '../PersonalDetails/PersonalDetails'
+import './Header.scss'
 
 function Header() {
 
