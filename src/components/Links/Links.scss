@@ -1,0 +1,24 @@
+.Links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+
+  > a {
+    align-items: center;
+    background-color: rgb(240, 255, 240);
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.3rem;
+    text-decoration: underline;
+
+    &:hover {
+      background-color: rgba(240, 255, 240, 0.7);
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+}

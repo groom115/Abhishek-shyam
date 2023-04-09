@@ -1,0 +1,13 @@
+.Stacks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  span {
+    margin-bottom: 1rem;
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.PersonalDetails {
+  color: rgb(240, 255, 240);
+
+  .name {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 4rem;
+  }
+
+  .impostorEffect {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+  }
+
+  .location {
+    > span {
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 2.4rem;
+    }
+    
+    > img {
+      height: 1.2rem;
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);;
+    }
+  }
+}
