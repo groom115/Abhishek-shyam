@@ -1,5 +1,5 @@
 import Header from '../../components/Header/Header'
-import Stacks from '../../components/Stacks/Stacks'
+import Stacks from '../Stacks/Stacks'
 import './Layout.scss'
 
 function Layout() {
