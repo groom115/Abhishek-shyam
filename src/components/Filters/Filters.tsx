@@ -46,7 +46,7 @@ function Filters({ filters, setFilters }: FilterProps) {
       return newFilters
     })
   }
-  
+
   return (
     <div className='Filters'>
       {Object.keys(filters).map(key => {

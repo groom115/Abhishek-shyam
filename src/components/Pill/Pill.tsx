@@ -1,8 +1,32 @@
+import { useState } from 'react';
+import { Stack } from '../../constants/stacks'
 import './Pill.scss'
 
-function Pill({text}: {text: string}) {
+function Pill({stack}: {stack: Stack}) {
+  const [isHovering, setIsHovering] = useState(false)
+  
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
+  
   return (
-    <span className='Pill'>{text}</span>
+    <div
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+      className='Pill'
+    >
+      {stack.name}
+      {<div className={`extras ${isHovering ? 'isHovering' : ''}`}>
+        <div className='description'>{stack.description}</div>
+        {(typeof stack.experience === 'number') && <div className='experience'>
+          <div className='progress' style={{width: `${stack.experience*10}%`}}>{`${stack.experience}/10`}</div>
+        </div>}
+      </div>}
+    </div>
   )
 }
 

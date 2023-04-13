@@ -1,4 +1,9 @@
 .Stacks {
+  .header {
+    margin: 1rem;
+    text-align: center;
+  }
+  
   .list {
     display: flex;
     flex-direction: row;

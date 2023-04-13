@@ -4,6 +4,7 @@ export const FILTERS: FiltersType = {
   all: true,
   frontend: false,
   backend: false,
-  'CI/CD': false,
+  cicd: false,
   infrastructure: false,
+  testing: false,
 }
