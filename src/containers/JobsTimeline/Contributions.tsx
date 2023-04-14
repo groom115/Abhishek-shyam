@@ -8,15 +8,16 @@ function ContributionLinks({link}: {link: Link}) {
   )
 }
 
-function Contributions({job}: {job: Job}) {
-  if (job.contributionsLinks?.length ?? 0 > 0) {
+function Contributions({contributionsLinks}: {contributionsLinks: Job['contributionsLinks']}) {
+ 
+  if (contributionsLinks?.length ?? 0 > 0) {
     return (
       <p className='Contributions'>
         <u className='title'>
           {'Contributions links:'}
         </u>
         <span className='list'>
-          {job.contributionsLinks?.map((link, i) => {
+          {contributionsLinks?.map((link, i) => {
             return (
               <span key={`${link.url}|${link.description}`}>
                 {i === 0 && ' '}

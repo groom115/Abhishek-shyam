@@ -8,15 +8,15 @@ function AppLinks({link}: {link: Link}) {
   )
 }
 
-function Applications({job}: {job: Job}) {
-  if (job.appLinks?.length ?? 0 > 0) {
+function Applications({appLinks}: {appLinks: Job['appLinks']}) {
+  if (appLinks?.length ?? 0 > 0) {
     return (
       <p className='Applications'>
         <u className='title'>
           {'Application links:'}
         </u>
         <span className='list'>
-          {job.appLinks?.map((link, i) => {
+          {appLinks?.map((link, i) => {
             return (
               <span key={`${link.url}|${link.description}`}>
                 {i === 0 && ' '}

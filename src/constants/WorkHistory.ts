@@ -83,7 +83,7 @@ export const JobHistory: Job[] = [{
   title: 'Full-Stack Software Engineer',
   team: '',
   location: 'Holargos, Athens, Greece',
-  description: 'Programize is a development house that builds all types of applications for startups, banks, governments and US universities.',
+  description: 'Programize is a development house that builds all types of applications for startups, businesses, banks, governments and US universities.',
   company: 'Programize LLC',
   period: {
     startDate: 'Jan 2018',
@@ -176,8 +176,8 @@ export const JobHistory: Job[] = [{
   description: '',
   company: 'Bobax (Family Business)',
   period: {
-    startDate: 'Sep 2016',
-    endDate: 'Dec 2017',
+    startDate: 'Sep 2001',
+    endDate: 'Aug 2016',
   },
   logo: DefaultLogo,
   technologies: ['Windows OS', 'Server rooms', 'Networking', 'Hardware', 'Retail Software'],

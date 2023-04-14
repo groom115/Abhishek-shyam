@@ -1,9 +1,13 @@
 import { VerticalTimelineElement } from 'react-vertical-timeline-component'
 
-import Contributions from './Contributions'
-import { Job } from '../../constants/WorkHistory'
-import Logo from '../../components/Logo/Logo'
 import Applications from './Applications'
+import Contributions from './Contributions'
+import Technologies from './Technologies'
+
+import Logo from '../../components/Logo/Logo'
+
+import { Job } from '../../constants/WorkHistory'
+import Projects from './Projects'
 
 const contentStyle: React.CSSProperties = {
   background: 'rgba(0, 0, 0, 0.3)',
@@ -43,12 +47,10 @@ function JobItem({job}: {job: Job}) {
         <p className='description'>
           {job.description}
         </p>
-        <p className='technologies'>
-          <u>{'Technologies:'}</u>
-          {` ${job.technologies.join(', ')}`}
-          </p>
-        <Contributions job={job} />
-        <Applications job={job} />
+        <Technologies technologies={job.technologies}/>
+        <Contributions contributionsLinks={job.contributionsLinks} />
+        <Applications appLinks={job.appLinks} />
+        <Projects projects={job.projects} />
       </VerticalTimelineElement>
   )
 }
