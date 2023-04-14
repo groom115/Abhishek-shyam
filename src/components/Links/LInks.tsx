@@ -7,14 +7,14 @@ import './Links.scss'
 function Links() {
   return (
     <div className='Links'>
-      <a className='github' href='https://github.com/tboulis' target='_blank'>
+      <a className='github' href='https://github.com/tboulis' target='_blank' rel='noopener noreferrer'>
         <img src={GithubIcon} height={20} />
         <img src={GithubLogo} height={20} />
       </a>
-      <a className='linkedin' href='https://www.linkedin.com/in/tasosboulis/' target='_blank'>
+      <a className='linkedin' href='https://www.linkedin.com/in/tasosboulis/' target='_blank' rel='noopener noreferrer'>
         <img src={LinkedinLogo} height={20}/>
       </a>
-      <a className='stackoverflow' href='https://stackoverflow.com/users/5605822/tasos' target='_blank'>
+      <a className='stackoverflow' href='https://stackoverflow.com/users/5605822/tasos' target='_blank' rel='noopener noreferrer'>
         <img src={StackOverflowLogo} height={20}/>
       </a>
     </div>
