@@ -1,0 +1,51 @@
+.RepoWidget {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  --c:  #229091; /* the color*/
+  
+  color: var(--c);
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+  
+  &:hover {
+    color: #fff;
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+
+    > img {
+      filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(4deg) brightness(99%) contrast(106%);
+    }
+  }
+  
+  &:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+
+    > img {
+      filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(4deg) brightness(99%) contrast(106%);
+    }
+  }
+
+  > img {
+    filter: invert(50%) sepia(54%) saturate(568%) hue-rotate(132deg) brightness(84%) contrast(89%);
+  }
+}
