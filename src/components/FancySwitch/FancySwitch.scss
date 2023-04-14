@@ -1,0 +1,53 @@
+.FancySwitch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  .toggle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    & input {
+      display: none;
+    }
+    & input:checked ~ label .toggler {
+      left: 0%;
+    }
+    & input + label .toggler {
+      left: 50%;
+    }
+    & label {
+      border: 1px solid #229091;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+      & .toggleLabel {
+        padding: 0.25em 1em;
+        min-height: 1em;
+        min-width: 1em;
+        text-align: c enter;
+        z-index: 1;
+        flex: 1;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .toggler {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #229091;
+    transition: all 0.5s;
+  }
+  
+}
