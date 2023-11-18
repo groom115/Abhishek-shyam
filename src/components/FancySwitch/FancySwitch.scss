@@ -11,15 +11,18 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    width: 100%;
+    // width: 33.3%;
     & input {
       display: none;
     }
     & input:checked ~ label .toggler {
-      left: 0%;
+      left: 0;
+      width: 100%;
     }
     & input + label .toggler {
-      left: 50%;
+      left: 0;
+      width: 0;
+      transition: width 0.1s ease;
     }
     & label {
       border: 1px solid #229091;
@@ -34,20 +37,24 @@
         padding: 0.25em 1em;
         min-height: 1em;
         min-width: 1em;
-        text-align: c enter;
+        text-align: center;
         z-index: 1;
         flex: 1;
-        transition: all 0.5s;
+        transition: all 0.1s;
       }
     }
   }
   .toggler {
     position: absolute;
     left: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background: #229091;
-    transition: all 0.5s;
+    transition: all 0.1s;
   }
-  
+  // .toggle.active {
+  //   & label .toggler {
+  //     left: calc(33.3%);
+  //   }
+  // }
 }

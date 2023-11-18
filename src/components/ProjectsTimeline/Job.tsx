@@ -4,7 +4,7 @@ import Applications from "./Applications";
 import Contributions from "./Contributions";
 import Technologies from "./Technologies";
 
-import Logo from "../../components/Logo/Logo";
+import Logo from "../Logo/Logo";
 
 import { Job } from "../../constants/WorkHistory";
 import Projects from "./Projects";
@@ -39,10 +39,10 @@ function JobItem({ job }: { job: Job }) {
       icon={<Logo src={job.logo} alt={job.company} />}
     >
       <h3 className="vertical-timeline-element-title">{job.title}</h3>
-      <i className="vertical-timeline-element-subtitle">
+      {/* <i className="vertical-timeline-element-subtitle">
         {`${job.company} - ${job.location}`}
-      </i>
-      {/* <p className='description'> */}
+      </i> */}
+
       <div style={{ marginTop: "30px" }}>
         {job.description.split(".").map((sentence, index) => (
           <p className="description" key={index}>
@@ -51,7 +51,6 @@ function JobItem({ job }: { job: Job }) {
         ))}
       </div>
 
-      {/* </p> */}
       <Technologies technologies={job.technologies} />
       <Contributions contributionsLinks={job.contributionsLinks} />
       <Applications appLinks={job.appLinks} />

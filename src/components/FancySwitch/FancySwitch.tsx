@@ -1,37 +1,48 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './FancySwitch.scss'
+import "./FancySwitch.scss";
 
 type FancySwitchProps = {
-  textA: string
-  textB: string
-  checked: boolean
-  handleChange: () => void
-}
+  textA: string;
+  textB: string;
+  textC: string;
+  activeButton: string;
+  handleChange: (button: string) => void;
+};
 
-function FancySwitch({ textA, textB, checked, handleChange }: FancySwitchProps) {  
-  const labels = [textA, textB]
-  const name = `${textA}${textB}`
-  
+function FancySwitch({
+  textA,
+  textB,
+  textC,
+  activeButton,
+  handleChange,
+}: FancySwitchProps) {
+  const labels = [textA, textB, textC];
+  const name = `${textA}${textB}${textC}`;
+
   return (
-    <div className='FancySwitch'>
-      <div className={'toggle ' + name}>
-        <input
-          onChange={handleChange}
-          type='checkbox'
-          id={name}
-          name={name}
-          checked={checked}
-        />
-        <label htmlFor={name}>
-          {labels.map((item, key) => {
-            return <div className='toggleLabel' key={item}> {item}</div>;
-          })}
-          <div className='toggler' />
-        </label>
-      </div>
+    <div className="FancySwitch">
+      {labels.map((item) => (
+        <div
+          key={item}
+          className={`toggle ${name} ${item === activeButton ? "active" : ""}`}
+          onClick={() => handleChange(item)}
+        >
+          <input
+            type="checkbox"
+            id={item}
+            name={item}
+            checked={item === activeButton}
+            readOnly
+          />
+          <label htmlFor={item}>
+            <div className="toggleLabel">{item}</div>
+            <div className="toggler" />
+          </label>
+        </div>
+      ))}
     </div>
-  )
+  );
 }
 
-export default FancySwitch
+export default FancySwitch;

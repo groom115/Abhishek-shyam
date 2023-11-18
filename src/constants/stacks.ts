@@ -1,181 +1,176 @@
 export enum StackCategory {
-  frontend = 'frontend',
-  infrastructure = 'infrastructure',
-  backend = 'backend',
-  cicd = 'cicd',
-  testing = 'testing',
+  frontend = "frontend",
+  backend = "backend",
+  cicd = "cicd",
+  testing = "testing",
+  application = "application",
+  fundamentals = "fundamentals",
 }
 
 export type Stack = {
-  name: string
-  description: string
-  category: StackCategory[]
-  experience?: number // 0 - 10
-}
+  name: string;
+  description: string;
+  category: StackCategory[];
+  experience?: number; // 0 - 10
+};
 
-export const STACKS: Stack[] = [{
-  name: 'React',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 10,
-}, {
-  name: 'Javascript',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 10,
-}, {
-  name: 'Typescript',
-  description: '',
-  category: [StackCategory.frontend, StackCategory.backend],
-  experience: 10,
-}, {
-  name: 'NodeJS',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 10,
-}, {
-  name: 'React Native',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 9,
-}, {
-  name: 'ElectronJS',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 10,
-}, {
-  name: 'Svelte',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 9,
-}, {
-  name: 'Docker',
-  description: '',
-  category: [StackCategory.backend, StackCategory.cicd],
-  experience: 9,
-}, {
-  name: 'PostgreSQL',
-  description: '',
-  category: [StackCategory.backend],
-  experience: 9,
-}, {
-  name: 'MongoDB',
-  description: '',
-  category: [StackCategory.backend],
-  experience: 9,
-}, {
-  name: 'MariaDB',
-  description: '',
-  category: [StackCategory.backend],
-  experience: 8,
-}, {
-  name: 'Redis',
-  description: '',
-  category: [StackCategory.backend, StackCategory.cicd],
-  experience: 10,
-}, {
-  name: 'Go',
-  description: '',
-  category: [StackCategory.backend],
-  experience: 5,
-}, {
-  name: 'Rust',
-  description: '',
-  category: [StackCategory.backend],
-  experience: 2,
-}, {
-  name: 'Jest',
-  description: '',
-  category: [StackCategory.testing],
-  experience: 10,
-}, {
-  name: 'Mocha',
-  description: '',
-  category: [StackCategory.testing],
-  experience: 10,
-}, {
-  name: 'Cypress',
-  description: '',
-  category: [StackCategory.testing],
-  experience: 10,
-}, {
-  name: 'Playwright',
-  description: '',
-  category: [StackCategory.testing],
-  experience: 10,
-}, {
-  name: 'React Testing Library',
-  description: '',
-  category: [StackCategory.testing],
-  experience: 9,
-}, {
-  name: 'AWS',
-  description: '',
-  category: [StackCategory.infrastructure, StackCategory.cicd],
-  experience: 8,
-}, {
-  name: 'Github Actions',
-  description: '',
-  category: [StackCategory.infrastructure, StackCategory.cicd],
-  experience: 10,
-}, {
-  name: 'CircleCI',
-  description: '',
-  category: [StackCategory.infrastructure, StackCategory.cicd],
-  experience: 10,
-}, {
-  name: 'TravisCI',
-  description: '',
-  category: [StackCategory.infrastructure, StackCategory.cicd],
-  experience: 10,
-}, {
-  name: 'Code Signing | Notarization (MS & Apple)',
-  description: '',
-  category: [StackCategory.frontend, StackCategory.cicd],
-  experience: 10,
-}, {
-  name: 'App Store Connect (Apple)',
-  description: '',
-  category: [StackCategory.frontend, StackCategory.cicd],
-  experience: 10,
-}, {
-  name: 'Bootstrap',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 9,
-}, {
-  name: 'Material UI',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 9,
-}, {
-  name: 'Ant Design',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 10,
-}, {
-  name: 'Semantic UI',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 9,
-}, {
-  name: 'Webpack',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 10,
-}, {
-  name: 'Vite',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 8,
-}, {
-  name: 'Rollup',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 8,
-}, {
-  name: 'CoreJS',
-  description: '',
-  category: [StackCategory.frontend],
-  experience: 8,
-}]
+export const STACKS: Stack[] = [
+  {
+    name: "React",
+    description: "",
+    category: [StackCategory.frontend],
+    experience: 10,
+  },
+  {
+    name: "Javascript",
+    description: "",
+    category: [StackCategory.frontend],
+    experience: 10,
+  },
+  {
+    name: "Typescript",
+    description: "",
+    category: [
+      StackCategory.frontend,
+      StackCategory.backend,
+      StackCategory.application,
+    ],
+    experience: 10,
+  },
+  {
+    name: "Next.JS",
+    description: "",
+    category: [StackCategory.frontend],
+    experience: 10,
+  },
+  {
+    name: "React Native",
+    description: "",
+    category: [StackCategory.frontend, StackCategory.application],
+    experience: 10,
+  },
+  {
+    name: "ElectronJS",
+    description: "",
+    category: [StackCategory.frontend],
+    experience: 8,
+  },
+  {
+    name: "TailwindCss",
+    description: "",
+    category: [StackCategory.frontend, StackCategory.application],
+    experience: 10,
+  },
+  {
+    name: "Python",
+    description: "",
+    category: [StackCategory.backend],
+    experience: 9,
+  },
+  {
+    name: "Docker",
+    description: "",
+    category: [StackCategory.backend, StackCategory.cicd],
+    experience: 8,
+  },
+  {
+    name: "FastAPI",
+    description: "",
+    category: [StackCategory.backend],
+    experience: 9,
+  },
+  {
+    name: "DynamoDB",
+    description: "",
+    category: [StackCategory.backend],
+    experience: 8,
+  },
+  {
+    name: "Pydantic",
+    description: "",
+    category: [StackCategory.backend],
+    experience: 10,
+  },
+
+  {
+    name: "Mock & Patch",
+    description: "",
+    category: [StackCategory.testing],
+    experience: 9,
+  },
+
+  {
+    name: "React Testing Library",
+    description: "",
+    category: [StackCategory.testing],
+    experience: 7,
+  },
+  {
+    name: "Github Actions",
+    description: "",
+    category: [StackCategory.cicd],
+    experience: 8,
+  },
+
+  {
+    name: "Bootstrap",
+    description: "",
+    category: [StackCategory.frontend],
+    experience: 10,
+  },
+  {
+    name: "Material UI",
+    description: "",
+    category: [StackCategory.frontend],
+    experience: 10,
+  },
+  {
+    name: "Shadow Cn",
+    description: "",
+    category: [StackCategory.frontend],
+    experience: 10,
+  },
+
+  {
+    name: "radix UI",
+    description: "",
+    category: [StackCategory.frontend],
+    experience: 9,
+  },
+  {
+    name: "Vite",
+    description: "",
+    category: [StackCategory.frontend],
+    experience: 8,
+  },
+  {
+    name: "OOPS ",
+    description: "",
+    category: [StackCategory.fundamentals],
+    experience: 9,
+  },
+  {
+    name: "Operating System ",
+    description: "",
+    category: [StackCategory.fundamentals],
+    experience: 8,
+  },
+  {
+    name: "Computer Networks ",
+    description: "",
+    category: [StackCategory.fundamentals],
+    experience: 8,
+  },
+  {
+    name: "DBMS",
+    description: "",
+    category: [StackCategory.fundamentals],
+    experience: 8,
+  },
+  {
+    name: "High Level Design ",
+    description: "",
+    category: [StackCategory.fundamentals],
+    experience: 7,
+  },
+];
