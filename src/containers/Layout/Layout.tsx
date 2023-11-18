@@ -8,14 +8,9 @@ import Stacks from "../Stacks/Stacks";
 
 import "./Layout.scss";
 import ProjectsTimeline from "../../components/ProjectsTimeline/JobsTimeline";
+import EducationTimeline from "../../components/EducationTimeline/EducationTimeline";
 
 function Layout() {
-  // const [checked, setChecked] = useState(true);
-
-  // const handleChange = () => {
-  //   setChecked((prev) => !prev);
-  // };
-
   const [activeButton, setActiveButton] = useState("Stacks");
 
   const handleChange = (button: string) => {
@@ -29,12 +24,14 @@ function Layout() {
         textA="Stacks"
         textB="Jobs"
         textC="Projects"
+        textD="Education"
         activeButton={activeButton}
         handleChange={handleChange}
       />
       {activeButton === "Jobs" && <JobsTimeline />}
       {activeButton === "Stacks" && <Stacks />}
       {activeButton === "Projects" && <ProjectsTimeline />}
+      {activeButton === "Education" && <EducationTimeline />}
     </div>
   );
 }

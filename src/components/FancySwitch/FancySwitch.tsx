@@ -6,6 +6,7 @@ type FancySwitchProps = {
   textA: string;
   textB: string;
   textC: string;
+  textD: string;
   activeButton: string;
   handleChange: (button: string) => void;
 };
@@ -14,10 +15,11 @@ function FancySwitch({
   textA,
   textB,
   textC,
+  textD,
   activeButton,
   handleChange,
 }: FancySwitchProps) {
-  const labels = [textA, textB, textC];
+  const labels = [textA, textB, textC, textD];
   const name = `${textA}${textB}${textC}`;
 
   return (

@@ -1,6 +1,3 @@
-import EnvestLogo from "../assets/envest.png";
-import BrightLogo from "../assets/BrightChamps.png";
-import FreshLogo from "../assets/Freshkart.png";
 import TaxiLogo from "../assets/Taxi.jpg";
 import HalloweenLogo from "../assets/Halloween.jpg";
 import YoutubeLogo from "../assets/Youtube.png";

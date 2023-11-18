@@ -1,7 +1,3 @@
-import MattermostLogo from "../assets/mattermost.svg";
-import SageLogo from "../assets/sage.png";
-import ProgramizeLogo from "../assets/programize.png";
-import DefaultLogo from "../assets/briefcase.png";
 import EnvestLogo from "../assets/envest.png";
 import BrightLogo from "../assets/BrightChamps.png";
 import FreshLogo from "../assets/Freshkart.png";

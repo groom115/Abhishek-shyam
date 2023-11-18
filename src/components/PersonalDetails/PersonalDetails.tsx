@@ -1,4 +1,4 @@
-import Links from "../Links/Links";
+import Links from "../Links/LInk";
 import LocationIcon from "../../assets/location.svg";
 import "./PersonalDetails.scss";
 
