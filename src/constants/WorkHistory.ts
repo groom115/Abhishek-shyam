@@ -67,8 +67,9 @@ export const JobHistory: Job[] = [
     location: "Brussels, Belgium (Remote)",
     description: `I joined Freshkart as a full-stack developer in a compact team of three, including the CTO, overseeing all software operations.
     As a frontend developer, I am solely responsible for our internal operation portal.
-    And as a backend developer, I work along with my CTO to create new Apis, mantaining old APis for new data model ,interacting with databases and  writing tests for validiting Api's.
-    I also contribute to the application's cloud architecture and also with some essential tools sendgrid, weglot, retool `,
+    And as a backend developer, I work along with my CTO to create new Apis, mantaining old APis for new data model, designed and optimised database schema's. Incorporated Uber Eats into our backend infrastructure.
+    Defined and introduced unit-tests across critical parts of the software platform.
+    Also contributed to the application's cloud architecture and also with some essential tools sendgrid, weglot, retool `,
     company: "Freshkart",
     period: {
       startDate: "Jun 2023",
