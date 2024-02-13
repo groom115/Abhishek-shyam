@@ -5,7 +5,7 @@ export const FILTERS: FiltersType = {
   frontend: false,
   backend: false,
   application: false,
-  cicd: false,
+  // cicd: false,
   testing: false,
   fundamentals: false,
 };

@@ -1,7 +1,7 @@
 export enum StackCategory {
   frontend = "frontend",
   backend = "backend",
-  cicd = "cicd",
+  // cicd = "cicd",
   testing = "testing",
   application = "application",
   fundamentals = "fundamentals",
@@ -49,12 +49,12 @@ export const STACKS: Stack[] = [
     category: [StackCategory.frontend, StackCategory.application],
     experience: 10,
   },
-  {
-    name: "ElectronJS",
-    description: "",
-    category: [StackCategory.frontend],
-    experience: 8,
-  },
+  // {
+  //   name: "ElectronJS",
+  //   description: "",
+  //   category: [StackCategory.frontend],
+  //   experience: 8,
+  // },
   {
     name: "TailwindCss",
     description: "",
@@ -67,12 +67,12 @@ export const STACKS: Stack[] = [
     category: [StackCategory.backend],
     experience: 9,
   },
-  {
-    name: "Docker",
-    description: "",
-    category: [StackCategory.backend, StackCategory.cicd],
-    experience: 8,
-  },
+  // {
+  //   name: "Docker",
+  //   description: "",
+  //   category: [StackCategory.backend, StackCategory.cicd],
+  //   experience: 8,
+  // },
   {
     name: "FastAPI",
     description: "",
@@ -105,12 +105,12 @@ export const STACKS: Stack[] = [
     category: [StackCategory.testing],
     experience: 7,
   },
-  {
-    name: "Github Actions",
-    description: "",
-    category: [StackCategory.cicd],
-    experience: 8,
-  },
+  // {
+  //   name: "Github Actions",
+  //   description: "",
+  //   category: [StackCategory.cicd],
+  //   experience: 8,
+  // },
 
   {
     name: "Bootstrap",
@@ -125,7 +125,7 @@ export const STACKS: Stack[] = [
     experience: 10,
   },
   {
-    name: "Shadow Cn",
+    name: "Chakra UI",
     description: "",
     category: [StackCategory.frontend],
     experience: 10,
