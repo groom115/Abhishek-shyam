@@ -35,11 +35,11 @@ export const JobHistory: Job[] = [
     title: "Full Stack developer",
     team: "",
     location: "Remote",
-    description: `I joined Envest as a Founding Software Developer to fasten its development process. Envest is an Emerging Crypto Investment Platform , currently having 150+ users. I am currently leading the Mobile App development process and also contributing to our web page(Link below)`,
+    description: `I joined Envest as a Founding Software Developer to fasten its development process. Envest had 1200+ users, 7.3% conversion date and AUM of 20,000. I led the Mobile App development process and also contributed to our web page. PS: Now closed due to funding issue`,
     company: "Envest",
     period: {
       startDate: "Oct 2023",
-      endDate: "Present",
+      endDate: "Aug 2024",
     },
     logo: EnvestLogo,
     technologies: [
@@ -56,8 +56,8 @@ export const JobHistory: Job[] = [
         description: "Web application",
       },
       {
-        url: "",
-        description: "Mobile App: (In development)",
+        url: "https://drive.google.com/file/d/1SdwQwLjkMraomXOHhSk0oAmAfKVjMwTL/view?usp=sharing",
+        description: "Mobile App",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const JobHistory: Job[] = [
     company: "Freshkart",
     period: {
       startDate: "Jun 2023",
-      endDate: "Present",
+      endDate: "May 2024",
     },
     logo: FreshLogo,
     technologies: [
